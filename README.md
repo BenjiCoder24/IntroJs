@@ -62,3 +62,9 @@ Resources for Further Learning:
 **MDN Web Docs**: Comprehensive resource for learning JavaScript.
 Online Tutorials and Courses: Websites like Codecademy, freeCodeCamp, and others offer interactive JavaScript courses.
 JavaScript Frameworks: As students advance, they can explore frameworks like React, Angular, and Vue.js for more complex applications.Introduction to Java Script
+
+## Lets get started
+
+https://github.com/BenjiCoder24/IntroJs/blob/main/code/processing.js
+
+
