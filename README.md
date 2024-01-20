@@ -94,28 +94,18 @@ Creating a Class in JavaScript:
 
 ```
 class Circle {
-    constructor(canvas) {
-        this.canvas = canvas;
-        this.context = canvas.getContext('2d');
-        this.mouseX = 0;
-        this.mouseY = 0;
-        this.canvas.addEventListener('mousemove', (event) => this.updateMousePosition(event));
-    }
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+    this.size = 50; // Set the size of the circle
+  }
 
-    updateMousePosition(event) {
-        this.mouseX = event.clientX - this.canvas.getBoundingClientRect().left;
-        this.mouseY = event.clientY - this.canvas.getBoundingClientRect().top;
-        this.draw();
-    }
-
-    draw() {
-        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        this.context.beginPath();
-        this.context.arc(this.mouseX, this.mouseY, 50, 0, Math.PI * 2, true);
-        this.context.fillStyle = 'blue';
-        this.context.fill();
-        this.context.stroke();
-    }
+  // The draw function to display the circle
+  draw() {
+    fill('blue');
+    noStroke();
+    ellipse(this.x, this.y, this.size * 2, this.size * 2); // p5.js uses diameter for the ellipse size
+  }
 }
 
 let canvas = document.getElementById('myCanvas');
