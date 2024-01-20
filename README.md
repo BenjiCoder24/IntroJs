@@ -58,7 +58,7 @@ Object: Instance of a class. An object in JavaScript is a standalone entity, wit
 Encapsulation:
 
 + Encapsulation is the bundling of data and the methods that operate on that data under a single unit or class. It restricts direct access to some of an object's components, which is a means of preventing accidental interference and misuse of the methods and data.
-Handout 4: Refactoring into a Class
+### Handout 4: Refactoring into a Class
 From Functions to Classes:
 
 + Transitioning from a simple function-based approach to a class-based approach. This involves encapsulating functionality within a class.
@@ -109,3 +109,9 @@ Resources for Further Learning:
 **MDN Web Docs**: Comprehensive resource for learning JavaScript.
 Online Tutorials and Courses: Websites like Codecademy, freeCodeCamp, and others offer interactive JavaScript courses.
 JavaScript Frameworks: As students advance, they can explore frameworks like React, Angular, and Vue.js for more complex applications.Introduction to Java Script
+
+## Lets get started
+
+https://github.com/BenjiCoder24/IntroJs/blob/main/code/processing.js
+
+
