@@ -123,6 +123,50 @@ let circle = new Circle(canvas);
 ```
 
 Detailed explanation of the Circle class example, breaking down the constructor and methods like updateMousePosition and draw.
+
+Now we start to use the class in our p5js code:
+
+```
+// Define the Circle class in p5.js
+class Circle {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+    this.size = 50; // Set the size of the circle
+  }
+
+  // The draw function to display the circle
+  draw() {
+    fill('blue');
+    noStroke();
+    ellipse(this.x, this.y, this.size * 2, this.size * 2); // p5.js uses diameter for the ellipse size
+  }
+}
+
+// Create a global circle object
+let circle;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  // Initialize the circle object with some starting coordinates
+  circle = new Circle(width / 2, height / 2);
+}
+
+function draw() {
+  background(255);
+
+  // Update the circle's position to the mouse coordinates
+  circle.x = mouseX;
+  circle.y = mouseY;
+
+  // Draw the circle
+  circle.draw();
+}
+
+
+```
+
+
 Advantages of Using Classes:
 
 **Organizes code**: easier to read, maintain, and debug.
