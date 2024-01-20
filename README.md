@@ -129,7 +129,7 @@ Now we start to use the class in our p5js code:
 ```
 // Define the Circle class in p5.js
 class Circle {
-  constructor(x, y) {
+  constructor(x, y) { //constructor is called when the object is created with 'new Circle(..)
     this.x = x;
     this.y = y;
     this.size = 50; // Set the size of the circle
@@ -176,14 +176,6 @@ Recap and Encouragement:
 
 JavaScript is a versatile language with wide-ranging applications.
 Encourage students to experiment with code and build their own small projects.
-Resources for Further Learning:
 
-**MDN Web Docs**: Comprehensive resource for learning JavaScript.
-Online Tutorials and Courses: Websites like Codecademy, freeCodeCamp, and others offer interactive JavaScript courses.
-JavaScript Frameworks: As students advance, they can explore frameworks like React, Angular, and Vue.js for more complex applications.Introduction to Java Script
-
-## Lets get started
-
-https://github.com/BenjiCoder24/IntroJs/blob/main/code/processing.js
 
 
