@@ -1,4 +1,4 @@
-# IntroJs
+# Introduction to Java Script
 
 ## Before we get started
 
@@ -10,9 +10,14 @@ https://editor.p5js.org/
 
 log in with your google account
 
-![login picture](./pictures/login_image.png)
+<!-- ![login picture](./pictures/login_image.png) -->
+<img src="./pictures/login_image.png" alt="login picture" width="130" />
 
-![google login](./pictures/google_login_image.png)
+and then select google login
+
+<!-- ![google login](./pictures/google_login_image.png) -->
+<img src="./pictures/google_login_image.png" alt="login picture" width="130" />
+
 
 
 ## Handout 1: Introduction to JavaScript
