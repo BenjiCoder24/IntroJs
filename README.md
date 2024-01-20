@@ -27,7 +27,24 @@ Example: Drawing a circle that follows the mouse.
 canvas element in HTML is used as a drawing surface.
 addEventListener listens for mouse movement.
 getContext and arc methods of the canvas are used to draw.
-Sample Program:
+#### Sample Program:
+
+```
+int ellipseSize; //variable 
+
+void setup() {
+    size(640, 360); // Set the size of the canvas
+    noStroke(); // Remove the stroke from the circle
+    fill(0, 0, 255); // Set the fill color to blue
+    ellipseSize = 100; // Initialize the size of the ellipse
+}
+
+void draw() {
+    background(255); // Set the background to white
+    ellipse(mouseX, mouseY, ellipseSize, ellipseSize); // Draw the circle at the mouse position
+}
+
+```
 
 Detailed code explanation that demonstrates creating a canvas and drawing a circle that follows the mouse cursor.
 ### Handout 3: Introduction to Object-Oriented Programming (OOP)
@@ -46,6 +63,36 @@ From Functions to Classes:
 
 + Transitioning from a simple function-based approach to a class-based approach. This involves encapsulating functionality within a class.
 Creating a Class in JavaScript:
+
+```
+class Circle {
+    constructor(canvas) {
+        this.canvas = canvas;
+        this.context = canvas.getContext('2d');
+        this.mouseX = 0;
+        this.mouseY = 0;
+        this.canvas.addEventListener('mousemove', (event) => this.updateMousePosition(event));
+    }
+
+    updateMousePosition(event) {
+        this.mouseX = event.clientX - this.canvas.getBoundingClientRect().left;
+        this.mouseY = event.clientY - this.canvas.getBoundingClientRect().top;
+        this.draw();
+    }
+
+    draw() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        this.context.beginPath();
+        this.context.arc(this.mouseX, this.mouseY, 50, 0, Math.PI * 2, true);
+        this.context.fillStyle = 'blue';
+        this.context.fill();
+        this.context.stroke();
+    }
+}
+
+let canvas = document.getElementById('myCanvas');
+let circle = new Circle(canvas);
+```
 
 Detailed explanation of the Circle class example, breaking down the constructor and methods like updateMousePosition and draw.
 Advantages of Using Classes:
