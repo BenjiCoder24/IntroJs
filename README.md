@@ -29,19 +29,47 @@ addEventListener listens for mouse movement.
 getContext and arc methods of the canvas are used to draw.
 #### Sample Program:
 
-```
-int ellipseSize; //variable 
+started code:
 
-void setup() {
-    size(640, 360); // Set the size of the canvas
-    noStroke(); // Remove the stroke from the circle
-    fill(0, 0, 255); // Set the fill color to blue
-    ellipseSize = 100; // Initialize the size of the ellipse
+```
+
+function setup() {
+  createCanvas(400, 400);
+  
+  //Inialize variable 
+  //xPos = 100
+
 }
 
-void draw() {
-    background(255); // Set the background to white
-    ellipse(mouseX, mouseY, ellipseSize, ellipseSize); // Draw the circle at the mouse position
+function draw() {
+  background(220);
+  
+  //xPos = mouseX
+  
+  ellipse(100, 100, 55, 55);
+}
+```
+
+full code
+```
+var xPos
+var yPos
+
+function setup() {
+  createCanvas(400, 400);
+  
+  //Inialize variable 
+  xPos = 100
+  yPos = 100
+}
+
+function draw() {
+  background(220);
+  
+  xPos = mouseX
+  yPos = mouseY
+  
+  ellipse(xPos, yPos, 55, 55);
 }
 
 ```
