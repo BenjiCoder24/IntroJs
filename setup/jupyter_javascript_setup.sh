@@ -1,4 +1,5 @@
 #!/bin/bash
 
 npm install -g ijavascript
-ijsinstall
+npm install node-p5
+

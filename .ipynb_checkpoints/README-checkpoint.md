@@ -1,20 +1,4 @@
 # IntroJs
-
-## Before we get started
-
-### open the P5js editor
-
-Open p5js editior;
-
-https://editor.p5js.org/
-
-log in with your google account
-
-![login picture](./pictures/login_image.png)
-
-![google login](./pictures/google_login_image.png)
-
-
 ## Handout 1: Introduction to JavaScript
 ### What is JavaScript?
 
