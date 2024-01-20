@@ -37,7 +37,7 @@ log in with your google account
 
 ![login picture](login_image.png)
 
-![google login](google_loing_image.png)
+![google login](google_login_image.png)
 
 started code:
 
